@@ -2,10 +2,11 @@ import express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('server is ready');
+app.use(express.static('dist'));
 
-})
+// app.get('/', (req, res) => {
+//     res.send('server is ready');
+// })
 
 //get a list of five jokes
 
